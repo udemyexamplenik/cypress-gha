@@ -6,7 +6,8 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "e2e:ci" : "npx cypress run"
+    "e2e:ci" : "npx cypress run",
+    "smoke:test": "npx cypress run --spec 'cypress/e2e/loging-in/log-in.cy.js' & npx cypress run --spec 'cypress/e2e/1-getting-started/todo.cy.js'"
   },
   "keywords": [],
   "author": "",

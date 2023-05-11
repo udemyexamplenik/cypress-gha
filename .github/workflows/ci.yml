@@ -1,11 +1,9 @@
 name: End-to-end tests
 on: 
-  # push:
-  #   branches:
-  #     - master
-  pull_request:
+  push:
     branches:
       - master
+  
       
 jobs:
   cypress-run:
